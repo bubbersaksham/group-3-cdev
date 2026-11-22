@@ -25,7 +25,8 @@ No build step and no install. Either:
 | `model-data.js` | Model inputs and defaults, taken from *Excel Prototype NSW RUGBY (3).xlsx* |
 | `app.js` | Calculations, forms, exports and the QR check-in flow |
 | `QR_SETUP.html` | Standalone tool that turns a Google Form link into a printable event QR poster |
-| `STANDALONE_WEBSITE.html` | Earlier all-in-one version of the site for offline use. It is **not** kept in sync with the source files above, so edit those instead |
+| `STANDALONE_WEBSITE.html` | The whole site in one file, for emailing or opening offline. **Generated, so don't edit it directly**: edit the source files, then run `python3 scripts/build_standalone.py` to rebuild it |
+| `scripts/build_standalone.py` | Rebuilds `STANDALONE_WEBSITE.html` from `index.html`, `styles.css`, `images/`, `model-data.js` and `app.js` |
 
 ## Updating the model
 
@@ -35,6 +36,7 @@ The calculator's defaults live in `model-data.js` (the `WORKBOOK` object, keyed 
 
 This is a prototype with **no backend**. Everything entered (activity logs, events, check-ins, calculator overrides) is stored in the browser's `localStorage` on that device only. It is not shared between users or devices.
 - Use **Reports → Export all data JSON** to back up or share a workspace, and **Import workspace** to restore it.
+- Event QR codes are drawn in the browser with [qrcodejs](https://github.com/davidshimjs/qrcodejs), loaded from cdnjs, so this needs an internet connection. Event links are not sent to a QR service.
 - QR check-ins in the app are saved on the device that scans the code. To collect responses from attendees, use `QR_SETUP.html` with a Google Form.
 - For shared, multi-device data, connect a backend or database (e.g. Supabase or Firebase).
 
