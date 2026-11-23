@@ -2,7 +2,7 @@
 
 > **New here? Got this as a zip?** Read **[HOW_TO_EDIT.md](HOW_TO_EDIT.md)** for simple steps to open and edit the website.
 >
-> **Live site:** https://bubbersaksham.github.io/nsw-rugby-legacy-dashboard/
+> **Live site:** https://bubbersaksham.github.io/group-3-cdev/
 
 A front-end prototype for measuring the impact of NSW Rugby Union's Rugby World Cup 2027 legacy programs (Pillar 2: Western Sydney and Hunter; Pillar 5: RWC Activation).
 

@@ -9,7 +9,7 @@ You don't need to install anything to view the site. To edit it, you need a free
 - **Mac:** double-click the zip file.
 - **Windows:** right-click the zip file → **Extract All** → **Extract**.
 
-You'll get a folder called something like `nsw-rugby-legacy-dashboard-main`. Do all your work inside this folder, and keep the files together. The website needs all of them.
+You'll get a folder called something like `group-3-cdev-main`. Do all your work inside this folder, and keep the files together. The website needs all of them.
 
 ## 2. Open the website
 
